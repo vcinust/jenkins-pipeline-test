@@ -3,16 +3,17 @@ pipeline {
     stages {
         stage('One') {
                 steps {
-                        echo 'Hi, this is Zulaikha from edureka'
+                        echo 'Hi, this is OMG!'
 			
                 }
         }
+	    /*
 	    stage('Two'){
 		    
 		steps {
 			input('Do you want to proceed?')
-        }
-	    }
+        	}
+	    }*/
         stage('Three') {
                 when {
                         not {
@@ -23,6 +24,7 @@ pipeline {
 			echo "Hello"
                         }
         }
+	    /*
         stage('Four') {
                 parallel {
                         stage('Unit Test') {
@@ -42,6 +44,6 @@ pipeline {
 				}
                                
 			}  }
-        }
+        }*/
     }
 }
